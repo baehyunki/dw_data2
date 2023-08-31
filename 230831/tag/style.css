@@ -1,0 +1,11 @@
+img{
+    /* 300 x 300 px이 되도록 만들어주세요 - width, height */
+    width: 300px;
+    height: 300px;
+    /* border로 테두리를 만들어주세요 */
+    border: 3px solid rgb(136, 128, 216);
+    /* padding 공간을 만들어주세요 */
+    padding: 10px;
+    /* 정확하게 300px이 되도록 만들어주세요 */
+    box-sizing: border-box;
+}

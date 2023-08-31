@@ -1,0 +1,30 @@
+.btn{
+    display:inline;
+    /* display:block; */
+    /* 1rem = 16px */
+    font-size: 1rem;
+    padding: 10px 20px;
+    /* 배경색을 파란색로 만들어주세요 */
+    background-color: rgb(37, 37, 159);
+    /* 글자색은 흰색으로 만들어주세요 */
+    color: white;
+    /* 테두리는 짙은 파란색으로 만들어주세요 */
+    border: 1px solid rgb(16, 16, 106);
+    /* 컬러 피커(Color Picker)를 활용해서 컬러를 만들어주세요 */
+    /* 사용자에게 커서 모양을 바꿔서 보여준다. */
+    cursor: pointer;
+    /* 1000ms = 1s */
+    /* transition은 before 상태에 배치하는것이 좋다 */
+    transition: all 200ms ease;
+}
+
+.btn:hover{
+    background-color: red;
+    /* :hover일때 모서리가 둥글게 처리해주세요 */
+    border-radius: 10px;    
+}
+.btn:active{
+    background-color: yellow;
+    /* :active일때 글자가 검은색이 되도록 만들어주세요 */
+    color: black;   
+}
