@@ -1,0 +1,31 @@
+.table-wrapper{
+   border: 1px solid #222;
+   border-radius: 10px;
+   overflow:hidden;
+   padding:0;
+}
+table{
+   border-collapse: collapse;
+   width:100%;
+}
+
+table tr{
+   border-bottom: 1px solid #222;
+}
+table tr:last-child{
+   border-bottom:0;
+}
+
+table td,
+table th{
+   border-right: 1px solid #222;
+   padding: 10px;
+}
+table td:last-child,
+table th:last-child{
+   border-right: 0;
+}
+
+
+
+
