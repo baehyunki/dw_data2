@@ -1,0 +1,9 @@
+ul {
+  background-color: aliceblue;
+}
+ul > li {
+  background-color: yellow;
+}
+ul > li > ul > li {
+  background-color: red;
+}
