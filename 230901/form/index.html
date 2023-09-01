@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form autocomplete="off">
+      <div>
+        <label for="username">사용자이름</label>
+        <!-- self closing tag,혼자 닫는 태그 -->
+        <input
+          id="username"
+          type="text"
+          name="sendUserName"
+          placeholder="사용자 이름을 작성해주세요"
+        />
+      </div>
+      <div>
+        <!-- id가 password인 input태그를 만들고, label태그도 만들어서 둘을 연결해주세요 -->
+        <!-- password input에도 name 속성을 연결해주세요 -->
+        <label for="password">패스워드</label>
+        <input
+          type="password"
+          id="password"
+          name="sendPassword"
+          placeholder="패스워드를 입력해주세요"
+        />
+      </div>
+      <div>
+        <label for="check">개인정보 사용에 동의하시겠습니까?</label>
+        <input type="checkbox" id="check" checked>
+      </div>
+      <!-- 레이블 안에 input을 넣은 경우 -->
+      <label>
+        새로운입력
+        <input type="text">
+      </label>
+      
+      <select name="" id="">
+        <option value="">사과</option>
+        <option value="">오렌지</option>
+        <option value="">수박</option>
+        <option value="">딸기</option>
+      </select>
+
+      <button type="submit">제출</button>
+    </form>
+  </body>
+</html>

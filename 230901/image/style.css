@@ -1,0 +1,31 @@
+a{
+    color:#222;
+    text-decoration: none;
+}
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    color: red;
+}
+img{
+    display:block;
+    width: 300px;
+    height: 300px;
+    /* object-fit: contain - 비율을 유지한채로 가장 긴 부분에 맞춰서 이미지를 채운다 */
+    object-fit: contain;
+    /* object-fit: fill - 비율을 무시한채로 무조건 영역에 채운다 */
+    object-fit: fill;
+    /* 가장 빈번하게 쓰이는 속성, 이미지를 최대한 비율을 유지하고 채우는데 집중하는 속성 */
+    object-fit: cover;
+    background-color: brown;
+    /* filter:blur(10px); */
+    filter: grayscale(100%);
+    transition: all 1000ms ease;
+    transform: scale(1);
+    border-radius:50%;
+}
+img:hover{
+    filter:grayscale(0);
+    /* transform: scale(1.5); */
+}
