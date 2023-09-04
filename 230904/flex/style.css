@@ -1,0 +1,39 @@
+.flex{
+    display:flex;
+    gap:10px;
+    /* flex는 자식요소의 높이를 부모 높이만큼 stretch 상태(늘렸다)로 만듭니다. */
+    height: 500px;
+    background-color: rgb(176, 211, 243);
+    /* flex의 시작점에 정렬하는것이 기본값 - justify-content: flex-start; */
+    /* justify-content: flex-start;
+    justify-content: center;
+    justify-content: flex-end; */
+    /* 잘 안씁니다. 자식요소의 절반 크기만큼 좌우에 여백을 만들어줍니다. */
+    /* justify-content: space-around; */
+    /* 잘 안씁니다. 자식요소간의 간격과 좌우 여백이 동일한 크기로 만들어집니다. */
+    /* justify-content: space-evenly; */
+    /* center와 더불어 가장 많이 쓰입니다. 첫째, 마지막 자식을 좌우로 붙이고, 나머지는 균등하게 배치합니다. */
+    /* justify-content: space-between; */
+    /* align-items - 교차축(Y)으로 정렬, stretch가 기본 값 */
+    /* align-items: stretch; */
+    /* flex-start 자식요소를 교차축 시작점(Y축의 가장 윗부분)으로 정렬 */
+    /* align-items: flex-start; */
+    /* 교차축(Y축) 중앙 정렬 - 많이 씁니다. */
+    /* align-items: center; */
+    /* 교차축(Y축) 하단으로 정렬 */
+    /* align-items: flex-end; */
+    justify-content: center;
+    align-items: center;
+}
+.box{    
+    width:100px;
+    height:100px;
+    background-color: rgb(0, 255, 128);
+    border: 1px solid black;
+}
+.box:nth-child(2){
+    background-color: rgb(0, 177, 89);
+}
+.box:nth-child(3){
+    background-color: rgb(0, 95, 47);
+}

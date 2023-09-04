@@ -1,19 +1,27 @@
 .box{
+    /* inline과 block의 성격을 모두 가진 속성 - inline요소에 width, height 값을 적용할때 활용*/
+    display: inline-block;
     width:120px;
     height: 120px;
     border: 1px solid black;
     border-radius:8px;
+    background-color: rgb(127, 210, 255);
 }
 
 #first{    
     background-color: rgb(255, 196, 0);
     /* deg = degree, 각도 */
     transform:rotate(0deg);
+    /* transform의 기준점을 정해주는 속성 */
+    transform-origin: left bottom;
+    /* 여러가지 속성에 대해 개별적으로 transition을 적용할 수 있다. */
+    /* transition: transform 1s ease, margin-left 1s ease; */
     transition: transform 1s ease;
 }
 /* #first에 마우스를 올렸을때 45도 회전하게 만들어주세요 <hint> :hover */
 #first:hover{
     transform: rotate(-360deg);
+    /* margin-left:100px; */
 }
 
 
@@ -42,6 +50,32 @@
 #third:hover{
     transform: skewY(30deg);
 }
-#t1{}
-#t2{}
-#t3{}
+#t1{
+    /* translateX(X축으로 이동할 값) */
+    transform: translateX(0);
+    transition: transform 1s ease;
+}
+#t1:hover{
+    transform: translateX(100%);
+}
+#t2{
+    /* translateY(y축으로 이동할 값) */
+    /* transform: translateY(-60px); */
+    transform: translateX(0);
+    transition: transform 1s ease-in;
+}
+#t2:hover{
+    transform: translateX(100%);
+}
+#t3{
+    /* translate(X값, Y값) */
+    /* transform: translate(100px, 150px); */
+    /* 퍼포먼스 개선을 위해 transform3D를 활용하는 경우도 있다 */
+    /* 주의할점 : animation/transform을 과하게 많이 쓰면, 브라우저가 해야할 일이 많아져, 화면이 버벅거리는 원인이 될 수 있다.*/
+    transform: translate3d(100px, 0 ,0);
+    transform: translateX(0);
+    transition: transform 2s 1s cubic-bezier(1,-0.02, 0.04, 1);
+}
+#t3:hover{
+    transform: translateX(100%);
+}
