@@ -1,0 +1,44 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+/* .box가 모두 가로로 한줄로 정렬되게 해주세요 */
+.container{
+    display:flex;    
+    /* flex-wrap:wrap; */
+    /* 배경색을 연하게 깔아주시고, 높이는 100% 가득 차게 만들어주세요 */
+    background-color: rgb(255, 238, 47);
+    height: 100vh;
+    /* 자식요소들이 각 행마다 상단으로 붙게 만들어주세요.  align-items */
+    /* align-items: flex-start; */
+    /* flex 주축의 방향은 기본 값이 row */
+    /* row-reverse는 주축의 진행방향을 역순으로 변경 */
+    /* column은 주축의 진행방향을 교차축 방향으로 바꾼다. 가로로 진행하던걸, 세로로 진행한다. */
+    flex-direction:column-reverse;
+    align-items: center;
+}
+
+/* .box 마다 6개 모두 각각 다른 색깔로 배경을 채워주세요 hint) :nth-child() */
+.box{
+    flex-basis: calc(100% / 3);
+    /* flex-grow:1; */
+    background-color: rgb(158, 138, 255);
+    color:white;
+}
+.box:nth-child(2){
+    flex-grow:2;
+    background-color: rgb(127, 105, 238);
+}
+.box:nth-child(3){
+    background-color: rgb(87, 61, 218);
+}
+.box:nth-child(4){
+    background-color: rgb(56, 24, 216);
+}
+.box:nth-child(5){
+    background-color: rgb(44, 13, 198);
+}
+.box:nth-child(6){
+    background-color: rgb(28, 4, 145);
+}
