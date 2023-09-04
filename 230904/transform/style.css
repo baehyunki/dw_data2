@@ -1,0 +1,47 @@
+.box{
+    width:120px;
+    height: 120px;
+    border: 1px solid black;
+    border-radius:8px;
+}
+
+#first{    
+    background-color: rgb(255, 196, 0);
+    /* deg = degree, 각도 */
+    transform:rotate(0deg);
+    transition: transform 1s ease;
+}
+/* #first에 마우스를 올렸을때 45도 회전하게 만들어주세요 <hint> :hover */
+#first:hover{
+    transform: rotate(-360deg);
+}
+
+
+#second{    
+    background-color: rgb(255, 106, 0);
+    /* transform: scale(1); */
+    transition: transform 1s ease;
+}
+/* #second에 마우스를 올렸을때 2배로 커지도록 만들어주세요 transition도 같이 사용해주세요 */
+/* transform은 다른 요소에 영향을 주지 않고, 
+혼자서 변형된다. */
+#second:hover{
+    transform: scale(2);
+}
+
+#third{    
+    background-color: rgb(255, 55, 0);
+    /* skew(x값,y값) */
+    /* transform: skew(30deg, 30deg); */
+    /* skewX는 x방향으로 기울일때 */
+    /* transform: skewX(45deg); */
+    /* skewY는 y방향으로 기울일때 */
+    transform: skewY(0deg);
+    transition: transform 1s ease;
+}
+#third:hover{
+    transform: skewY(30deg);
+}
+#t1{}
+#t2{}
+#t3{}
