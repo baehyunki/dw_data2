@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.gallery{
+    display: flex;    
+}
+.gallery .image{
+    flex-grow:1;
+    padding:10px;    
+}
+.container {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.container .image{
+    flex-grow:1;
+    flex-basis: calc(100% / 4);
+    padding: 10px;
+    aspect-ratio: 1/1;
+    
+}
+/* .container .image:nth-child(1){
+    flex-grow:2;
+    flex-basis: 50%;
+    aspect-ratio: 2/1;
+} */

@@ -1,0 +1,34 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+img{
+    width:100%;
+    max-width: 100%;
+    height:100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery > .image{
+    flex-basis: calc(100% / 4);
+    padding: 10px;
+    
+}
+.gallery > .image img{
+    transform: scale(1);
+    transition: all 1s ease;
+}
+.gallery > .image:hover img{
+    transform: scale(1.2);
+}
+.gallery > .image:first-child{
+    flex-basis: 50%;
+}
+.gallery > .image:first-child img{
+    aspect-ratio: 2/1;
+}
