@@ -1,0 +1,96 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.flex{
+    background-color: hsl(220,60%,90%);
+    display: flex;
+    width:100%;
+    max-width: 600px;
+    height:400px;
+    /* 양쪽으로 균등하게 여백을 만들어 중앙으로 정렬 */
+    margin-left: auto;
+    margin-right: auto;
+    /* 중앙정렬 축약형 */
+    margin: 0 auto;
+    /* 자식요소들을 중앙으로 정렬해주세요 */
+    /* 자식요소들을 균등하게 배치할때 자주 쓰이는 속성 */
+    justify-content: center;
+    /* flex-direction: row-reverse; */
+    align-items: center;
+}
+.flex div{
+    flex-basis: calc(100% / 5);
+    
+}
+
+.container{
+    display:flex;
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    background-color: rgb(251, 226, 193);
+    margin: 0 auto;
+    /* 줄바꿈을 허용 */
+    flex-wrap: wrap;
+    /* align-items: flex-end; */
+    
+    /* alignContent는 여러줄일때만 작동함 */
+    /* align-content: space-between; */
+}
+.container > div{
+    /* 두줄로 배치되어야하고, 한줄에 5개씩 배치되어야함 */
+    /* 기본적인 크기를 지정해줘야함 */
+    flex-basis: calc(100% / 5);
+    /* flex-grow:1; */
+}
+.container > div:first-child{
+    /* 첫번째 자식만 나머지 자식들에 비해 2배 크기를 갖도록 만들어주세요 */
+    /* flex-grow:2; */
+    flex-basis: 40%;
+}
+.container > div:nth-child(7){
+    flex-basis: 60%;
+}
+
+/* 4번째부터 글자 색깔을 하얀색으로 만들기 */
+.container > div:nth-child(n+4){
+    color: white;
+}
+.container > div:nth-child(1),
+.flex > div:nth-child(1){
+    background-color: hsl(220,60%,80%);
+}
+.container > div:nth-child(2),
+.flex > div:nth-child(2){
+    background-color: hsl(220,60%,70%);
+}
+.container > div:nth-child(3),
+.flex > div:nth-child(3){
+    background-color: hsl(220,60%,60%);
+}
+.container > div:nth-child(4),
+.flex > div:nth-child(4){
+    background-color: hsl(220,60%,50%);
+}
+.container > div:nth-child(5),
+.flex > div:nth-child(5){
+    background-color: hsl(220,60%,40%);
+}
+.container > div:nth-child(6),
+.flex > div:nth-child(6){
+    background-color: hsl(220,60%,30%);
+}
+.container > div:nth-child(7),
+.flex > div:nth-child(7){
+    background-color: hsl(220,60%,20%);
+}
+.container > div:nth-child(8),
+.flex > div:nth-child(8){
+    background-color: hsl(220,60%,10%);
+}
+.container > div:nth-child(9),
+.flex > div:nth-child(9){
+    background-color: hsl(220,60%,0%);
+}

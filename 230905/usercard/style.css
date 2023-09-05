@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Noto+Sans+KR:wght@300;500;700&display=swap');
+@font-face {
+    font-family: 'iceSotong-Rg';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/iceSotong-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: 'Montserrat', 'Noto Sans KR' ,sans-serif;
+}
+img{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+body{
+    background-color: rgb(194, 203, 211);
+}
+.card{
+    width: 100%;
+    max-width: 400px; 
+    background-color: white;   
+    padding: 1rem;
+    margin: 1rem auto 0;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:0.25rem; /* 4px */
+    /* box-shadow: x y blur spread color; */
+    /* rgba = red,green,blue,alpha(투명도) */
+    /* 투명도: 1 = 100% , 0 = 0%, 0.5 = 50% */
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(0px);
+    transition: all 500ms ease;
+}
+.card:hover{
+    transform: translateY(-20px);
+}
+.avatar{
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #ffbad3;
+    margin-bottom: 1rem;
+}
+.card h2{
+    font-size:20px;    
+}
+.card p{
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+.card .button{
+    /* display:inline-block; */
+    display: flex;
+    align-items: center;
+    gap:0.5rem;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    padding: 0.5rem 1.25rem;
+    border-radius: 2em;
+    color: black;
+    
+}
+.card .button:hover{
+    background-color: black;
+    color:white;
+
+}
+.card .button:hover .icon{
+    color:white;
+}
+.icon{
+    font-size:40px;
+    color: red;
+}
