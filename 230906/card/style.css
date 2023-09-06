@@ -1,0 +1,71 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+img{
+    width:100%;
+    max-width:100%;
+}
+/* card */
+.card{
+    width: 275px;
+    height: 365px;
+    margin: 1rem auto 0;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+/* profile image */
+.card-image{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.card-image img{
+    height: 100%;
+    object-fit: cover;
+}
+/* card body */
+.card-body{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+/* badges */
+.badges{
+    display: flex;
+    gap:0.5rem;
+}
+.badge{
+    padding: 0.25rem 0.5rem;
+    border: 1px solid #cccccc;
+    border-radius: 1rem;
+    font-size:13px;
+    display: flex;
+    align-items: center;
+    gap:0.25rem;
+    width: fit-content;
+}
+/* title */
+.title{
+    font-size: 18px;
+}
+/* description */
+.desc{
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.4px;
+    color: #9e9e9e;
+}
+/* card footer */
+.card-footer{
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    align-items: center;
+    font-size: 14px;
+    color: #a0a0a0;
+}

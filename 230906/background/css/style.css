@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background{
+    background-image:url('https://thumb.mt.co.kr/06/2021/03/2021030517294890953_1.jpg/dims/optimize/');
+    width: 100vw;
+    height: 100vh;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    
+    /* border: 1px solid black; */
+    /* background-size: 120% 50%;
+    background-size: 100%; */
+}

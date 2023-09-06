@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+/* header */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1280px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 0 auto; /* 상하 : 0, 좌우: auto */
+}
+/* brand */
+.brand{
+    font-family: 'Pacifico', cursive;
+}
+/* menu list */
+.menu-list{
+    display: flex;
+    list-style: none;
+    gap: 3rem; /* 16px * 3 = 48px */
+}
+/* icons */
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
