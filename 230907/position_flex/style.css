@@ -1,0 +1,45 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    height: 300px;
+    width: 100%;
+    max-width:800px;
+    background-color:rgb(180, 206, 229);
+    /* align-items: flex-end; */
+}
+/** 
+교차축(수직정렬)에 대한 정리
+------------------------------
+부모한테 줄 수 있는 속성 
+-----------------------------
+align-items - 한 줄일때 수직정렬하는 속성
+align-content - 두 줄 이상일때 수직정렬하는 속성
+------------------------------
+자식한테 줄 수 있는 속성
+------------------------------
+align-self - 부모에서 주어진 align-items와 align-content의 통제를 벗어나서 스스로 수직정렬하는 속성
+------------------------------
+*/
+.flex div{    
+    flex-grow:1;
+}
+.stretch{
+    align-self: stretch;
+    background-color: hsl(180, 50%,30%);
+}
+.start{
+    align-self: flex-start;
+    background-color: hsl(180, 50%,40%);
+}
+.center{
+    align-self: center;
+    background-color: hsl(180, 50%,60%);
+}
+.end{
+    align-self: flex-end;
+    background-color: hsl(180, 50%,70%);
+}
