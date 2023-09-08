@@ -1,0 +1,19 @@
+h1{
+    position: relative;
+    padding: 0 0.5rem;
+    width: fit-content;
+}
+h1::before,
+h1::after{
+    position:absolute;
+    top:0;
+    content:'"';
+    width: 20px;
+    height:100%;
+}
+h1::before{
+    left:-10px;
+}
+h1::after{
+    left:100%;
+}
