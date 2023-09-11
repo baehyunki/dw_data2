@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+img{
+    width:100%;
+    max-width: 100%;
+}
+ul{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+html,body{
+    background-color: aliceblue;
+}
+.container{
+    display: flex;
+    flex-wrap:wrap;
+    max-width: 1440px;
+    margin: 0 auto;    
+}
+.card{
+    flex-basis: 100%;
+    padding: 1rem;
+}
+.card-inner{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+.card-body{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+.card-body figure{
+    --size: 128px;
+    width: var(--size);
+    height: var(--size);
+    border-radius:var(--size);
+    overflow: hidden;
+}
+.card-body figure img{
+    height: 100%;
+    object-fit: cover;
+}
+.card-body h2{
+    /* clamp(최솟값, 기본값, 최댓값) */
+    font-size: clamp(1rem, 2.5vw, 1.5rem); 
+}
+.card-body p{
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 1rem;
+}
+.card-body .badge{
+    font-size: 14px;
+    font-weight: 600;
+    color: green;
+    border: 1px solid green;
+    padding: 4px 8px;
+    border-radius: 16px;
+    background-color: rgb(204, 248, 233);
+}
+.card-footer {
+    display: flex;
+    border-top: 1px solid rgb(200, 200, 200);
+}
+.card-footer li{
+    flex-basis:50%;
+    padding:1rem;
+    border-right: 1px solid rgb(200,200,200);
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+}
+.card-footer li a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.card-footer li:last-child{
+    border-right:0;
+}
+
+@media (min-width: 640px){
+    .card{
+        flex-basis: 50%;
+    }
+}
+
+@media (min-width: 1024px){
+    .card{
+        flex-basis: calc(100% / 3);
+    }
+}
+
+@media (min-width: 1200px){
+    .card{
+        flex-basis: calc(100% / 4);
+    }
+}

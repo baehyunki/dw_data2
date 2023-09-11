@@ -1,0 +1,77 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    flex-wrap:wrap;
+}
+.box{
+    flex-basis:100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.box:nth-child(1){
+    /* order는 아무값도 안주면, 기본으로 0을 갖고 있다. */
+    /* order:2; */
+    background-color: hsl(100, 50%, 50%);
+}
+.box:nth-child(2){
+    background-color: hsl(100, 50%, 60%);
+}
+.box:nth-child(3){
+    /* order:-1; */
+    background-color: hsl(100, 50%, 70%);
+}
+.box:nth-child(4){
+    /* order:1; */
+    background-color: hsl(100, 50%, 80%);
+}
+/* mobile - 640px */
+/* table - 768, 1024px */
+/* desktop - 1200, 1440, 1920px */
+
+/* media query를 안줬을때(모바일)는 기본적으로 width: 0부터 계산하기 시작 */
+/* min-width (최소) table */
+@media (min-width: 1024px){
+    /* .flex > * {
+        color: red;
+    } */
+    .box{
+        flex-basis:calc(100% / 2);
+    }
+}
+/* min-width(최소) 1200px 일때는 3등분 */
+@media (min-width: 1200px){
+    .box{        
+        flex-basis: calc(100% / 3);
+    }
+    .box:nth-child(2){
+        background-color: red;
+    }
+}
+/* min-width(최소) 1440px 일때는 4등분 */
+@media (min-width: 1440px){
+    .box{
+        flex-basis: calc(100% / 4);
+    }
+    .box:nth-child(3){
+        background-color: orange;
+    }
+}
+/* 최소 320px부터 시작해서 최대 640px 까지는 백그라운드가 blue */
+@media (min-width: 320px) and (max-width:640px){
+    .box{
+        background-color: blue!important;
+    }
+}
+/* 모바일 기기 경우 화면을 수평(landscape)방향으로 돌렸을때 */
+@media (orientation: landscape){
+    .box{
+        background-color: red !important;
+    }
+}

@@ -1,0 +1,63 @@
+/* 전역변수 지정 */
+:root{
+    --size: 50px;
+    --pos:10px;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+img{
+    width:100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery{
+    display: flex;
+    width:100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+.gallery-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: calc(100% / 4);
+    gap: 1rem;
+}
+.image{
+    aspect-ratio: 1/1;
+    overflow: hidden;    
+    height: 100%;    
+    position: relative;
+    /* var(--변수명) var = variable */
+    border-radius: var(--size);
+}
+.image .badge{
+    --size: 30px;
+    position: absolute;
+    background-color: hsl(220, 50%, 50%);
+    bottom:var(--pos);
+    left:var(--pos);
+    /* padding: 1rem; */
+    border-radius: 50%;
+    font-size: 13px;
+    color: white;
+    width: var(--size);
+    height: var(--size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery-item h2{
+    font-size: 18px;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    width:150px;
+    text-align: center;
+}
