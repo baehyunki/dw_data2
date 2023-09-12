@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.circle{
+    width: 200px;
+    height: 200px;
+    background-color: #1c24c8;
+    /* 애니메이션 이름 */
+    /* animation-name: morph; */
+    /* 애니메이션 재생 속도 */
+    /* animation-duration: 1.5s; */
+    /* 애니메이션 지연 */
+    /* animation-delay: 3s; */
+    /* 애니메이션 반복횟수 */
+    /* animation-iteration-count: infinite; */
+    /* normal - 기본값 정방향 */
+    /* reverse - 역방향 */
+    /* alternate 정방향 진행 후 역방향 */
+    /* animation-direction: alternate;
+    animation-timing-function: cubic-bezier(1,-0.1, 0.02, 0.87); */
+    animation: morph 1.5s infinite alternate cubic-bezier(1,-0.1, 0.02, 0.87);
+}
+@keyframes morph{
+    0%{
+        border-radius:0;
+        transform:translate(0,0) rotate(0);
+        background-color: red;
+    }
+    50%{
+        transform:translate(calc(50vw - 100px), 300px) rotate(0);
+        background-color: green;
+    }
+    100%{
+        border-radius: 50%;
+        transform:translate(calc(100vw - 200px), 0) rotate(3600deg);
+        background-color: blue;
+    }
+}
