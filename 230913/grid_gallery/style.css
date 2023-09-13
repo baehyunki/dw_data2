@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.gallery{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(2, 1fr);
+}
+.gallery figure{
+    aspect-ratio: 3/2;
+}
+@media (min-width: 1024px){
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width: 1200px){
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .gallery figure:nth-child(1){
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+    
+}

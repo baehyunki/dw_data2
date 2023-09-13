@@ -1,0 +1,18 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.grid{
+    display: grid;
+    /* 1fr = fraction(등분) */
+    /* grid-template-columns : 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(4, 1fr);    
+    grid-template-rows: 200px 300px;
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+.grid-item{
+    color: white;
+    background-color: hsl(220, 50%, 50%);
+}
