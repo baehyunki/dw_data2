@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.form{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem; /*16 + 8 = 24px*/
+    /* border: 1px solid dodgerblue; */
+    box-shadow: 0 0 0 1px dodgerblue;
+    position: relative;
+}
+.input-wrapper input{
+    padding: 1rem;
+    border:0;
+}
+.input-wrapper label{
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    background-color: white;
+    padding: 4px 8px;
+    transition: all 0.2s ease;
+}
+.input-wrapper input:focus{
+    outline:none;
+    /* box-shadow : x y blur spread color */
+    box-shadow: 0 0 0 3px dodgerblue;
+}
+.input-wrapper input:focus+label{
+    top: -16px;
+}
+button[type="submit"]{
+    padding: 1rem 2rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    border:0;
+    background-color: dodgerblue;
+    color: white;
+    cursor: pointer;
+}
+/* 클릭한 순간만 버튼 배경이 검은색이 되도록 작성 */
+button[type="submit"]:active{
+    background-color: black;
+}
