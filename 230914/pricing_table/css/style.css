@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+.pricing{
+    display: grid;
+    grid-template-columns:1fr;
+    gap: 32px;
+    padding: 1rem;
+}
+.pricing-item{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid rgb(213, 213, 213);
+}
+.pricing-item .btn{
+    --color: hsl(230, 78%, 42%);
+    padding: 1rem 2rem;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid var(--color);
+    color: var(--color);
+    border-radius: 0.5rem;
+}
+.pricing-item ul li{
+    display: flex;
+    align-items: start;
+    padding: 0.5rem 0;
+    color: rgb(85, 85, 85);
+}
+.pricing-item h2{
+    font-size: 1.5rem;
+}
+.pricing-item p{
+    line-height: 1.75;
+    color: rgb(85, 85, 85);
+}
+.pricing-item .cost{
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: -2px;
+}
+.pricing-item.recommend{
+    border: 1px solid hsl(230, 78%, 42%);
+}
+.pricing-item.recommend h2{
+    color: hsl(230, 78%, 42%);
+}
+.pricing-item.recommend .btn{
+    background-color: hsl(230, 78%, 42%);
+    color: white;
+}
+@media (min-width: 640px){
+    .pricing{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1024px){
+    .pricing{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width: 1200px){
+    .pricing{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
