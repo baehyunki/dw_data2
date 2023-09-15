@@ -1,0 +1,14 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.svg-icon{
+    width: 48px;
+    height: 48px;
+    fill:#03C75A;
+    /* fill: transparent; */
+    fill-opacity: 0.5;
+    stroke: #03C75A;
+    stroke-width:0.2px;
+}
