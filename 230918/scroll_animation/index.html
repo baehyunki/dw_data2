@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <figure>
+        <img src="images/1.jpg" alt="" />
+      </figure>
+      <div class="content">
+        <h2>Lorem, ipsum.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+          quisquam. Voluptatem illum architecto blanditiis, fuga sapiente
+          aspernatur rerum sint. Vel nobis dicta accusantium ducimus
+          consequuntur aliquam pariatur quasi a rem.
+        </p>
+      </div>
+    </section>
+    <section>
+        <!-- data-aos-anchor-placement 는 top-bottom 일 경우, 자기 자신의 top 부분이, 화면의 bottom에 걸렸을때 실행된다는 의미 -->
+      <figure data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <img src="images/2.webp" alt="" />
+      </figure>
+      <div class="content">
+        <h2>Lorem, ipsum.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+          quisquam. Voluptatem illum architecto blanditiis, fuga sapiente
+          aspernatur rerum sint. Vel nobis dicta accusantium ducimus
+          consequuntur aliquam pariatur quasi a rem.
+        </p>
+      </div>
+    </section>
+    <section>
+      <figure data-aos="fade-up">
+        <img src="images/3.webp" alt="" />
+      </figure>
+      <div class="content">
+        <h2>Lorem, ipsum.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+          quisquam. Voluptatem illum architecto blanditiis, fuga sapiente
+          aspernatur rerum sint. Vel nobis dicta accusantium ducimus
+          consequuntur aliquam pariatur quasi a rem.
+        </p>
+      </div>
+    </section>
+    <section>
+      <figure data-aos="fade-up">
+        <img src="images/4.webp" alt="" />
+      </figure>
+      <div class="content">
+        <h2>Lorem, ipsum.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+          quisquam. Voluptatem illum architecto blanditiis, fuga sapiente
+          aspernatur rerum sint. Vel nobis dicta accusantium ducimus
+          consequuntur aliquam pariatur quasi a rem.
+        </p>
+      </div>
+    </section>
+
+    <!--  AOS 스크립트 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- AOS 초기화 -->
+    <script>
+      AOS.init({
+        duration: 2000, // 몇초에 걸쳐서 애니메이션 될지
+        delay: 100 // 몇초 후에 애니메이션이 실행될지
+      });
+    </script>
+  </body>
+</html>
