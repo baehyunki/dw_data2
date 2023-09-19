@@ -4,6 +4,7 @@
  */
 const title = document.getElementById('title')
 console.log(title)
+
 // getElementById(), querySelector(), querySelectorAll()
 // 1. button 가져와서 변수에 담는다 (#btn)
 // const button = document.getElementById('btn')
