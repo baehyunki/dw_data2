@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    width :100vw;
+    height: 100vh;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+}
+.container.bg{
+    background-color: dodgerblue;
+}
+#btn{
+    padding: 1rem 2rem;
+    border: 1px solid black;
+    color: black;
+    background-color: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+}
