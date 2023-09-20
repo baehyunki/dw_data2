@@ -56,4 +56,3 @@ function showName(name){
 }
 
 showName('배현기')
-
