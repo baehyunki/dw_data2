@@ -1,0 +1,17 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bar{
+    height: 50px;
+    width: 10%;
+    background-color: red;
+}
+
+/* color */
+.color{
+    background-color : hsl(0, 50%, 50%);
+    width: 100%;
+    height :200px;
+}
