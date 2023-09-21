@@ -24,7 +24,13 @@ const image = document.getElementById('image')
 const title = document.getElementById('title')
 
 for(let i = 0; i < buttons.length; i++){
-    console.log(buttons[i])
+    // 초기화
+    // 첫번째 버튼에 check 클래스 추가
+    buttons[0].classList.add('check')
+    // 첫번째 데이터 타이틀을 figcaption에 할당
+    title.textContent = data[0].title
+
+    // console.log(buttons[i])
     // i번째 버튼을 클릭하면
     buttons[i].addEventListener('click',() => {
         // i번째 데이터의 url 출력
@@ -33,7 +39,7 @@ for(let i = 0; i < buttons.length; i++){
         image.src = data[i].url
         // title의 값에 data[i].title
         title.textContent = data[i].title;
-        
+
         // 모든 버튼에서 check 클래스 제거
         for(let j = 0; j < buttons.length; j++ ){
             buttons[j].classList.remove('check')
