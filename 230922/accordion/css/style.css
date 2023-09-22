@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.list {
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+.list-item{
+    padding:1rem;
+    box-shadow: 0 0 0 3px rgb(200, 200 ,200);
+    border-radius: 8px;
+}
+.list-item.selected{
+    box-shadow: 0 0 0 3px rgb(255, 0 ,0)
+}
+.list-item .content{
+    display: none;
+}
+.list-item.selected .content{
+    display: block;
+}
+.list-item .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.list-item .icon{
+    transform: rotate(0deg);
+}
+.list-item.selected .icon{
+    transform: rotate(180deg);
+}
