@@ -1,0 +1,53 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html,body{
+    width:100%;
+    height: 100%;
+    background-color: aliceblue;   
+}
+.text {
+    font-size: 32px;
+    padding:2rem;
+}
+#sidebar{
+    position:fixed;
+    width: 320px;
+    height: 100vh;
+    top:0;
+    left:-320px;
+    background-color:white;
+    transition: all 500ms cubic-bezier(1, 0, 0, 1);
+    padding: 1rem;
+    line-height: 1.75;
+    z-index:1000;
+}
+#sidebar.open{
+    left:0;
+}
+#sidebar #trigger {
+    position: absolute;
+    top:0;
+    width: 48px;
+    height: 48px;
+    right:-48px;
+    background-color: black;
+    color: white;
+    border: 0;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    top:0;
+    left:0;
+    opacity:0;
+    transition: all 200ms linear;
+    backdrop-filter: blur(5px);
+}
+.overlay.open{
+    opacity:1;
+}
