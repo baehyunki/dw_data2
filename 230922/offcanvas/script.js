@@ -31,5 +31,24 @@ trigger.addEventListener('click', () => {
     // classList.add('클래스명') : '클래스명' 추가
     // sidebar.classList.remove('클래스명') : '클래스명' 제거
     // classList.toggle('클래스명') : 해당요소에 '클래스명'이 있는지 판단해서 유무에 따라 추가 / 삭제
-    sidebar.classList.toggle('open')
+    // sidebar.classList.toggle('open')
+    
+    if(sidebar.classList.contains('open')){
+        sidebar.classList.remove('open')
+        overlay.classList.remove('open')
+        trigger.textContent = '열기'
+        
+    } else {
+        sidebar.classList.add('open')
+        overlay.classList.add('open')
+        trigger.textContent = '닫기'
+    }
+})
+
+overlay.addEventListener('click', () => {
+    if(overlay.classList.contains('open')){
+        sidebar.classList.remove('open')
+        overlay.classList.remove('open')
+        trigger.textContent = '열기'
+    }    
 })
