@@ -13,6 +13,7 @@ let lottoNumber = []; // 6개
 button.addEventListener("click", () => {
   // 버튼 비활성화
   button.classList.add("processing");
+  button.textContent = '번호 생성중'
 
   // 로또번호 초기화 : 로또 번호 길이 체크 후 비워주기 
   if (lottoNumber.length > 0) {
@@ -38,9 +39,10 @@ button.addEventListener("click", () => {
       li[i].textContent = lottoNumber[i];
     }, timer * i);
   }
-  
+
   // 버튼 활성화
   setTimeout(() => {
     button.classList.remove("processing");
+    button.textContent = '로또번호생성'
   }, timer * lottoNumber.length);
 });
