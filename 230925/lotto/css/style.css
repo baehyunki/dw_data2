@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  #result {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem;
+    margin: 0 auto;
+    width: fit-content;
+  }
+  #result li {
+    --size: 48px;
+    width: var(--size);
+    height: var(--size);
+    display: inline-flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    background-color: dodgerblue;
+    border-radius: var(--size);
+    color: white;
+    font-weight: bold;
+  }
+  
+  #generate {
+    user-select: none;
+    padding: 0.5em 1em;
+    background-color: #ff540a;
+    color: white;
+    border: 0;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+  }
+  #generate.processing {
+    cursor: not-allowed;
+    background-color: #bbbbbb;
+    pointer-events: none;
+  }
+  
