@@ -1,0 +1,23 @@
+.swiper {
+  width: 100%;
+  height: 300px;
+}
+.swiper-slide.first {
+  background-color: dodgerblue;
+}
+.swiper-slide.second {
+  background-image: url("https://cdn.britannica.com/16/234216-050-C66F8665/beagle-hound-dog.jpg");
+  background-position: center;
+  background-size:cover;
+}
+.swiper-pagination-bullet {
+  background-color: white;
+  border: 1px solid black;
+}
+.swiper-pagination-bullet-active {
+  /* --color: black; */
+  background-color: var(--color, red);
+  width: 50px;
+  border-radius: 4px;
+  transition: all 200ms ease;
+}
