@@ -6,12 +6,18 @@ console.log(dataList)
 // html : data-counter, js : element.dataset.counter
 for(let i = 0; i < dataList.length; i++){
     const target = dataList[i].dataset.counter
+    const timerText = dataList[i].querySelector('.timer')
+
+    const step = Math.floor(target / 200)
+    console.log(step)
+
     let index = 0;
     setInterval(() => {
         if(index < target){
             // 증가
-            index++
-            console.log(index)            
+            index = index + step
+            // console.log(index)            
+            timerText.textContent = index
         }
-    }, 10)
+    }, 1)
 }
